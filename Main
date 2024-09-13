@@ -1,0 +1,8 @@
+package br.com.seguradora.cliente;
+
+public class main {
+    public static void main(String[] args) {
+        ClientePremium objCP = new ClientePremium("julio");
+        System.out.println(objCP.contratarSeguro(18));
+    }
+}
