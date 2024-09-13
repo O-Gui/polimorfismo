@@ -1,0 +1,15 @@
+package br.com.seguradora.cliente;
+
+public class ClientePremium extends Cliente {
+
+    public ClientePremium(String nome) {
+        super(nome);
+    }
+
+    @Override
+    public double contratarSeguro(int idade) {
+        double ValorBase = super.contratarSeguro(idade);
+        double valorComDesconto = ValorBase * 0.90;
+        return valorComDesconto;
+    }
+}
